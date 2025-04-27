@@ -1,56 +1,73 @@
-/* Style global */
-body {
-    font-family: Arial, sans-serif;
+/* RESET et base */
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header {
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a); /* Fond dégradé */
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    background-color: #6a1b9a;  /* Violet */
-    color: white;
-    padding: 50px 0;
 }
 
 h1 {
     font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* Style Header */
+header {
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre */
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
 }
 
 .photo-profil {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Rendre l'image ronde */
+    border-radius: 50%;
     object-fit: cover;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .btn-cv {
-    display: inline-block;
+    background-color: #ffb822;
+    color: #333;
     padding: 10px 20px;
-    background-color: #4CAF50;  /* Couleur du bouton */
-    color: white;
-    text-decoration: none;
+    font-size: 1.2rem;
     border-radius: 5px;
-    font-weight: bold;
+    text-decoration: none;
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
 .btn-cv:hover {
-    background-color: #45a049;  /* Couleur au survol */
+    background-color: #f5a623;
 }
 
-/* Style pour les sections */
+/* Sections */
 section {
-    margin: 40px 20px;
+    margin: 40px 0;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-}
-
-section h2 {
-    color: #333;
+    border-radius: 10px;
 }
 
 ul {
@@ -62,21 +79,36 @@ ul li {
     margin: 10px 0;
 }
 
-/* Animation fade-in (déjà gérée par AOS) */
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Animation fade-in (AOS) */
 [data-aos="fade-up"] {
     opacity: 0;
     transition: opacity 0.5s ease-out;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Personnalisation de l'animation fade-in */
-[data-aos="fade-up"] {
-    transition: opacity 0.5s ease-out;
+/* Media Queries pour mobile/tablette */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .btn-cv {
+        font-size: 1rem;
+    }
 }
