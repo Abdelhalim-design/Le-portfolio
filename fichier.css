@@ -1,0 +1,82 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background-color: #6a1b9a;  /* Violet */
+    color: white;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.photo-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Rendre l'image ronde */
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;  /* Couleur du bouton */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #45a049;  /* Couleur au survol */
+}
+
+/* Style pour les sections */
+section {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Animation fade-in (déjà gérée par AOS) */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Personnalisation de l'animation fade-in */
+[data-aos="fade-up"] {
+    transition: opacity 0.5s ease-out;
+}
