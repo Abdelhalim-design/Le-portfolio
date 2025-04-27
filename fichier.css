@@ -6,51 +6,53 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #4e73df, #1cc88a); /* Fond dégradé */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #00bcd4, #3f51b5); /* Dégradé bleu et violet */
     color: #fff;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding: 40px 0;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin: 20px 0;
+    font-size: 3rem;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-h2 {
-    font-size: 2rem;
-    margin: 20px 0;
-    color: #fff;
+.subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #ffeb3b;
 }
 
-/* Style Header */
 header {
-    padding: 40px 0;
-    background: rgba(0, 0, 0, 0.7); /* Fond sombre */
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond sombre */
+    padding: 60px 0;
     border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
 }
 
 .photo-profil {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .btn-cv {
-    background-color: #ffb822;
+    background-color: #ffeb3b;
     color: #333;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 1.2rem;
     border-radius: 5px;
     text-decoration: none;
@@ -59,15 +61,21 @@ header {
 }
 
 .btn-cv:hover {
-    background-color: #f5a623;
+    background-color: #fbc02d;
 }
 
 /* Sections */
 section {
-    margin: 40px 0;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 ul {
@@ -76,6 +84,7 @@ ul {
 }
 
 ul li {
+    font-size: 1.1rem;
     margin: 10px 0;
 }
 
@@ -105,7 +114,7 @@ footer p {
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .btn-cv {
