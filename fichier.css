@@ -1,4 +1,4 @@
-/* RESET et base */
+/* RESET de base */
 * {
     margin: 0;
     padding: 0;
@@ -7,56 +7,47 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #00bcd4, #3f51b5); /* Dégradé bleu et violet */
-    color: #fff;
+    background: #f4f4f9; /* Couleur de fond claire pour un look plus moderne */
+    color: #333;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
+/* Container central */
 .container {
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 20px;
 }
 
-h1 {
-    font-size: 3rem;
-    margin: 10px 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    color: #ffeb3b;
-}
-
+/* Header */
 header {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Fond sombre */
-    padding: 60px 0;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Dégradé élégant */
+    color: white;
+    padding: 80px 20px;
     border-radius: 10px;
+    text-align: center;
+    position: relative;
 }
 
-.photo-profil {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 20px;
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.intro .subtitle {
+    font-size: 1.2rem;
+    color: #ffeb3b;
+    margin-bottom: 20px;
 }
 
 .btn-cv {
     background-color: #ffeb3b;
     color: #333;
     padding: 15px 30px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -64,60 +55,84 @@ header {
     background-color: #fbc02d;
 }
 
+.photo-profil {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 /* Sections */
 section {
-    background-color: rgba(255, 255, 255, 0.9);
     padding: 40px 20px;
+    margin-bottom: 50px;
     border-radius: 10px;
-    margin-bottom: 30px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    font-size: 1.1rem;
-    margin: 10px 0;
-}
-
-/* Footer */
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
     text-align: center;
+    color: #4e54c8;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #4e54c8;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
     color: white;
     margin-top: 50px;
 }
 
-footer p {
-    font-size: 1rem;
-}
-
-/* Animation fade-in (AOS) */
+/* Animations pour AOS */
 [data-aos="fade-up"] {
     opacity: 0;
-    transition: opacity 0.5s ease-out;
+    transition: opacity 1s ease-out;
 }
 
 /* Media Queries pour mobile/tablette */
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
+    .cards {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    h1 {
-        font-size: 2.5rem;
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
     }
-    
+
+    header {
+        padding: 40px 20px;
+    }
+
     .btn-cv {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
