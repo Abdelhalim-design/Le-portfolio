@@ -1,84 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio d'Abdelhalim Zouggagh</title>
-
-    <!-- Google Fonts (pour une typographie moderne) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Ajouter la bibliothèque AOS pour les animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    
-    <!-- Lien vers ton fichier CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
-<body>
 
+<body>
     <header>
         <div class="container">
-            <h1>Abdelhalim Zouggagh</h1>
-            <p class="subtitle">Passionné par la robotique et les systèmes automatisés</p>
-            <img src="assets/ta-photo.jpg" alt="Abdelhalim Zouggagh" class="photo-profil">
-            <a href="assets/ton-cv.pdf" download="Abdelhalim_Zouggagh_CV" class="btn-cv">Télécharger mon CV</a>
+            <div class="intro">
+                <h1>Abdelhalim Zouggagh</h1>
+                <p class="subtitle">Passionné par la robotique et les systèmes automatisés</p>
+                <a href="assets/ton-cv.pdf" download="CV_Abdelhalim_Zouggagh" class="btn-cv">Télécharger mon CV</a>
+            </div>
+            <img src="assets/photo_profil.jpg" alt="Abdelhalim Zouggagh" class="photo-profil">
         </div>
     </header>
 
-    <!-- Section À propos -->
     <section id="a-propos" data-aos="fade-up">
         <h2>À propos de moi</h2>
-        <p>Je m'appelle <strong>Abdelhalim Zouggagh</strong>, j'ai 19 ans et je suis actuellement en deuxième année de BUT GE 2I à l'IUT de Nîmes.</p>
-        <p>Passionné par les technologies, j'ai réalisé plusieurs projets tels que la mise en place de stations de pompage, des moteurs pour drones, et actuellement, je travaille sur des projets comme <strong>Arcanoide</strong> et un robot suiveur de ligne. Je suis motivé par les défis techniques et les solutions innovantes.</p>
+        <p>Je m'appelle <strong>Abdelhalim Zouggagh</strong>, étudiant en BUT GE 2I à l'IUT de Nîmes. Passionné par la robotique, j'ai travaillé sur divers projets, notamment des stations de pompage, des moteurs de drones et bien plus encore.</p>
     </section>
 
-    <!-- Section Formation -->
-    <section id="formation" data-aos="fade-up">
-        <h2>Formation</h2>
-        <ul>
-            <li><strong>BUT GE 2I</strong> - IUT de Nîmes (en cours)</li>
-            <li><strong>Différents TSA</strong> (Technologie et Systèmes Automatisés)</li>
-        </ul>
-    </section>
-
-    <!-- Section Compétences -->
     <section id="competences" data-aos="fade-up">
         <h2>Compétences</h2>
-        <ul>
-            <li>Robotique et Systèmes Automatisés</li>
-            <li>Développement de moteurs pour drones</li>
-            <li>Gestion de projets techniques (stations de pompage, robotique)</li>
-            <li>Programmation (C, Python, Arduino)</li>
-            <li>Conception de solutions innovantes pour l'industrie</li>
-        </ul>
+        <div class="cards">
+            <div class="card">
+                <h3>Robotique</h3>
+                <p>Conception et programmation de robots autonomes pour des applications industrielles.</p>
+            </div>
+            <div class="card">
+                <h3>Automatisation</h3>
+                <p>Création de systèmes automatisés pour des projets industriels et environnementaux.</p>
+            </div>
+            <div class="card">
+                <h3>Programmation</h3>
+                <p>Développement en C, Python et Arduino pour des systèmes embarqués et applications robotiques.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Section Projets -->
     <section id="projets" data-aos="fade-up">
-        <h2>Projets</h2>
+        <h2>Mes projets</h2>
         <ul>
-            <li><strong>Station de Pompage</strong> : Conception et mise en place d'une station de pompage pour divers projets industriels.</li>
-            <li><strong>Moteur de Drone</strong> : Développement d'un moteur pour drone avec des applications en robotique.</li>
-            <li><strong>Arcanoide</strong> : Projet en cours de développement, impliquant des technologies avancées pour la création de jeux ou d'applications interactives.</li>
-            <li><strong>Robot Suiveur de Ligne</strong> : Création d'un robot autonome capable de suivre une ligne pour des applications en automatisation.</li>
+            <li><strong>Station de Pompage</strong> : Mise en place d'une station de pompage pour un projet industriel.</li>
+            <li><strong>Moteur de Drone</strong> : Développement de moteurs de drones pour des applications robotiques.</li>
+            <li><strong>Arcanoide</strong> : Projet en cours dans le domaine de la simulation et de l'interaction avec des technologies innovantes.</li>
+            <li><strong>Robot Suiveur de Ligne</strong> : Robot autonome capable de suivre une ligne pour des applications pratiques.</li>
         </ul>
     </section>
 
-    <!-- Section Contact -->
-    <section id="contact" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Email : abdelhalimzouggagh@example.com</p>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Abdelhalim Zouggagh</p>
     </footer>
 
-    <!-- Initialiser AOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
 </html>
